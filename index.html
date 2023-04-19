@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div>
+        <textarea aria-multiline="true" autofocus="autofocus" class="inputText" id="originalText"
+            placeholder="Ingrese su texto aquí"></textarea>
+    </div>
+    <div class="rectangle">
+        <div class="rectangleText">
+            <label id="resultText" class="result"></label>
+        </div>
+    </div>
+
+    <div class="boxInfo">
+        <img src="icon-info.png" alt="" srcset="">
+        <label>Solo letras minúsculas y sin acentos</label>
+    </div>
+
+    <div class="botones">
+        <button id="encryptBtn" class="botonEncriptar">Encriptar</button>
+        <button id="decryptBtn" class="botonDesencriptar">Desencriptar</button>
+    </div>
+
+    <div id="cajaMensajes">
+        <div class="muneco">
+            <img src="muñeco.png" alt="" srcset="">
+        </div>
+        <div class="msgNoEncontrado">
+            <div class="textNoEncontrado">
+                <label> Ningún mensaje fue encontrado</label>
+            </div>
+            <div class="msgTextNoEncontrado">
+                <label>Ingresa el texto que desees encriptar o desencriptar.</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button id="copyBtn" class="botonCopy">Copiar</button>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
